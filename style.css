@@ -1,0 +1,79 @@
+#content{
+  display: grid;
+  grid-template-columns: 5% 75% 20%;
+}
+#tools{
+  background-color: silver;
+}
+#workSpace{ 
+  background-color:#F5F5FA;
+  overflow: scroll;
+  width: 75vw;
+  height: 100vh;
+}
+#loadImages{ 
+  overflow-y: scroll; 
+  height: 100vh;
+  
+}
+#search-content{
+  z-index: 99;
+  display: block;
+  position: fixed;
+  height: 46px;
+  background: rgba(0,123,255,.5);
+  right: 1px;
+  padding-top: 6px;
+}
+#images-liste{
+  list-style: none;
+  padding-left: 0px;
+  Padding-top: 45px;
+}
+#images-liste li{
+  display: inline-block;
+}
+/*.images-listed{}*/
+#my-canvas{
+ 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#tools{}
+#draw-tools{
+  padding: 0px;
+  position: relative;
+}
+#draw-tools li{
+  list-style: none;
+  display: inline-block;
+  width: 70px;
+  margin-bottom: 1px;
+  background: beige;
+  text-align: center;
+  cursor: pointer;
+}
+.img-tools{
+  width: 20px;
+  height: 20px;
+}
+#colors{
+  list-style: none;
+  position: absolute;
+  bottom: -16px;
+  background: #9a8e8e;
+  padding: 0px;
+  padding-left: 8px;
+  display: b;
+  width: 72px;
+}
+#colors .color{
+  width: 15px;
+  height: 15px;
+  margin-right: 0px;
+  display: inline-block;
+  border: 1px black solid;
+}
+.bttn{
+  width: 100%;
+}

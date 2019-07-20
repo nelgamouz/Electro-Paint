@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Electrone Paint Application</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="content">
+    <div id="tools">
+      <ul id="draw-tools">
+        <li>   
+          <img  id="brush" class="img-tools" src="images/icons8-paint-brush-64.png"   alt="brush">
+        </li>
+        <li> 
+          <img id="line" class="img-tools" src="images/icons8-line-40.png"   alt="line">
+        </li>
+        <li>
+           <img id="rectangle" class="img-tools" src="images/icons8-rectangle-50.png"   alt="rectangle">
+          </li>
+        <li> 
+          <img id="circle" class="img-tools" src="images/icons8-circle-50.png"  alt="circle">
+        </li>
+        <li> 
+          <img id="ellipse" class="img-tools" src="images/icons8-oval-40.png"   alt="oval">
+        </li>
+        <li> 
+          <img id="polygon" class="img-tools" src="images/icons8-polygon-80.png" " alt="oval">
+        </li>
+        <li> 
+          <button class="bttn" id="open">فتح</button>
+        </li>
+        <li> 
+          <button class="bttn" id="save">حفظ</button> 
+         </li>
+      </ul>
+      <select id="line-Width" >
+        <option value="1">1pt</option>
+        <option value="2">2pt</option>
+        <option value="3">3pt</option>
+        <option value="4">4pt</option>
+        <option value="5">5pt</option>
+        <option value="6">6pt</option>
+    </select>
+      <ul id="colors">
+        <li class="color" myColor="#000000" ></li>
+        <li class="color" myColor="#FFFFFF" ></li>
+        <li class="color" myColor="#FF0000" ></li>
+        <li class="color" myColor="#00FF00" ></li>
+        <li class="color" myColor="#0000FF" ></li>
+        <li class="color" myColor="#FFFF00" ></li>
+        <li class="color" myColor="#00FFFF" ></li>
+        <li class="color" myColor="#FF00FF" ></li>
+        <li class="color" myColor="#C0C0C0" ></li>
+        <li class="color" myColor="#808080" ></li>
+        <li class="color" myColor="#800000" ></li>
+        <li class="color" myColor="#008000" ></li>
+        <li class="color" myColor="#800080" ></li>
+        <li class="color" myColor="#008080" ></li>
+        <li class="color" myColor="#000080" ></li>
+        <li class="color" myColor="#808000" ></li>
+        <li class="color" myColor="#FFDEAD" ></li>
+        <li class="color" myColor="#F0F8FF" ></li>
+      </ul>
+    </div>
+    <div id="workSpace">
+      <canvas id="my-canvas">
+      </canvas>
+    </div>
+     
+    <div id="loadImages">
+      <div id="search-content">
+          <input type="text" name="search" id="search">
+          <button id="btn-get-img">Load Images</button> 
+      </div>
+      <ul id="images-liste">
+      </ul>
+    </div>
+  </div>
+  <script>
+    require('./render.js');
+    require('./draw.js');
+  </script>
+</body>
+
+
+</html>
