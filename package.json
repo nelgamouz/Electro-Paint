@@ -16,7 +16,7 @@
     "file-saver": "^2.0.2",
     "fs-copy-file": "^2.1.2",
     "html-to-image": "^0.1.1",
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "node-pixabayclient": "^1.0.0",
     "pixabay-api": "^1.0.4",
     "popper.js": "^1.15.0",
