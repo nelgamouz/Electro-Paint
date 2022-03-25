@@ -11,7 +11,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "canvas-to-image-node": "^1.0.4",
-    "electron": "^5.0.6",
+    "electron": "^13.6.6",
     "electron-canvas-to-buffer": "^2.0.0",
     "file-saver": "^2.0.2",
     "fs-copy-file": "^2.1.2",
